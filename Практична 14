@@ -5,16 +5,27 @@
     <link href="style.css" rel="stylesheet" />
  </head>
  <body>
-     <div class="div">
-         <p>Div paragraph</p>
-         <ul>
-             <li>list item</li>
-         </ul>
+     <div class="parent-1">
+         <p>Div1 paragraph</p>
+
+         <div>
+             <p>Div2 paragraph</p>
+
+             <div>
+                 <p>Div3 paragraph</p>
+
+                 <div>
+
+                     <p>Div4 paragraph</p>
+
+                 </div>
+             </div>
+         </div>
      </div>
 
      <p class="p-1">I love this world</p>
      <p class="p-2">I love this world</p>
-     <p class="p-3">I love this world</p>
+     <p id="test-1">I love this world</p>
 
 
 
@@ -42,3 +53,50 @@
      <img src="./images/image.jpg" alt="Nice picture" />
  </body>
 </html>
+
+
+
+CSS FILE
+* {
+    color: limegreen;
+    font-family: Impact;
+    font-weight:1;
+}
+
+h1 {
+    color: darkgray;
+}
+
+a {
+    color:seagreen;
+}
+
+p {
+    color: lightskyblue;
+}
+
+.test {
+    color:darkred;
+}
+
+#test1 {
+    color:antiquewhite; 
+}
+
+.parent-1 ~ p{
+    font-size:x-large;
+    background-color: lightpink;
+}
+
+.test-1.test-2 {
+    color:yellow;
+}
+
+.p-1, p-2, p-3  {
+    color: blueviolet;
+}
+
+p[id="test-1"] {
+    color: black;
+
+}

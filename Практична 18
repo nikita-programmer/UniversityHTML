@@ -1,37 +1,44 @@
-HTML
 <!DOCTYPE html>
-<html>
- <head>
-    <title>Super title</title>
-    <link rel="stylesheet" href="./stule.css">
- </head>
- <body>
-    <div class="parent">
-        <h1 class="test" id="test-id" style="color: gray;">Hello from Lviv</h1>
+<html lang="en">
+<head>
+    <title>Nice title</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <ul class>
+            <li>
+                <a href="">Про нас</a>
+            </li>
+            <li>
+                <a href="">Блог</a>
+            </li>
+            <li>
+                <a href="">Кампанії</a>
+            </li>
+            <li>
+                <a href="">Підтримати організацію</a>
+            </li>
+            <li>
+                <a href="">Книги</a>
+            </li>
+            <li>
+                <a href="">Для медіа</a>
+            </li>
+            <li>
+                <a href="">Контакти</a>
+            </li>
+        </ul>
     </div>
- </body>
+</body>
 </html>
 
-CSS
-#test-id {
-    color: brown;
+*CSS File style.css
+
+ul {
+ list-style-type: none;
 }
 
-.test {
-    color: pink;
-}
-
-body div h1 {
-    color: yellow;
-}
-
-div h1 {
-    color: red;
-}
-
-h1 {
-    color: green!important;
-}
-h1 {
-    color: red!important;
+a {
+  text-decoration: none;
 }
